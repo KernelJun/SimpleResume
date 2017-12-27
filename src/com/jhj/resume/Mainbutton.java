@@ -127,13 +127,11 @@ public class Mainbutton extends Activity implements OnClickListener{
 		if(!flag){
 			AlertDialog.Builder builder=new AlertDialog.Builder(this);
 			builder.setIcon(android.R.drawable.ic_dialog_alert);
-			builder.setTitle("����״̬");
 			builder.setTitle(R.string.networktitle);
 			builder.setMessage(R.string.network_message);
 			builder.setPositiveButton(R.string.ok,new DialogInterface.OnClickListener() {
 		        public void onClick(DialogInterface dialog, int which) {
 			        // TODO Auto-generated method stub
-		        	//����settings�е�wifi����
 		        	Intent mIntent=new Intent(ACTION_SETTINGS);
 		        	//Intent mIntent=new Intent();
 			        //ComponentName comp=new ComponentName("com.android.settings","com.android.settings.Settings");
@@ -200,6 +198,11 @@ public class Mainbutton extends Activity implements OnClickListener{
     		imageSwitcher.showNext();
     		break;
 		case R.id.my_photoshow:
+			boolean test = true;
+			if(test){
+				Toast.makeText(this, "KernelJun is developing the item", Toast.LENGTH_SHORT).show();
+				return;
+			}
 			Intent photo = new Intent(this, MyPhotoShowGridView.class);
 			startActivity(photo);
 			break;

@@ -19,9 +19,7 @@ public class MyPhotoShowGridView extends Activity {
         super.onCreate(savedInstanceState); 
         setContentView(R.layout.gridview); 
         GridView gv = (GridView)findViewById(R.id.GridView1); 
-        //ÎªGridViewÉèÖÃÊÊÅäÆ÷ 
         gv.setAdapter(new MyAdapter(this)); 
-        //×¢²á¼àÌýÊÂ¼þ 
         gv.setOnItemClickListener(new OnItemClickListener() 
         { 
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) 
@@ -31,11 +29,8 @@ public class MyPhotoShowGridView extends Activity {
         }); 
     } 
 } 
-    //×Ô¶¨ÒåÊÊÅäÆ÷ 
     class MyAdapter extends BaseAdapter{ 
-        //ÉÏÏÂÎÄ¶ÔÏó 
         private Context context; 
-        //Í¼Æ¬Êý×é 
         private Integer[] imgs = { 
                 R.drawable.pic0, R.drawable.pic1, R.drawable.pic2,  
                 R.drawable.pic3, R.drawable.pic4, R.drawable.pic5,                
@@ -59,20 +54,20 @@ public class MyPhotoShowGridView extends Activity {
             return id; 
         } 
          
-        //´´½¨View·½·¨ 
+        //ï¿½ï¿½ï¿½ï¿½Viewï¿½ï¿½ï¿½ï¿½ 
         public View getView(int position, View convertView, ViewGroup parent) { 
              ImageView imageView; 
                 if (convertView == null) { 
                     imageView = new ImageView(context); 
-                    imageView.setLayoutParams(new GridView.LayoutParams(100, 100));//ÉèÖÃImageView¶ÔÏó²¼¾Ö 
-                    imageView.setAdjustViewBounds(true);//ÉèÖÃ±ß½ç¶ÔÆë 
-                    imageView.setScaleType(ImageView.ScaleType.CENTER);//ÉèÖÃ¿Ì¶ÈµÄÀàÐÍ 
-                    imageView.setPadding(8, 8, 1, 1);//ÉèÖÃ¼ä¾à 
+                    imageView.setLayoutParams(new GridView.LayoutParams(100, 100));//ï¿½ï¿½ï¿½ï¿½ImageViewï¿½ï¿½ï¿½ó²¼¾ï¿½ 
+                    imageView.setAdjustViewBounds(true);//ï¿½ï¿½ï¿½Ã±ß½ï¿½ï¿½ï¿½ï¿½ 
+                    imageView.setScaleType(ImageView.ScaleType.CENTER);//ï¿½ï¿½ï¿½Ã¿Ì¶Èµï¿½ï¿½ï¿½ï¿½ï¿½ 
+                    imageView.setPadding(8, 8, 1, 1);//ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ 
                 }  
                 else { 
                     imageView = (ImageView) convertView; 
                 } 
-                imageView.setImageResource(imgs[position]);//ÎªImageViewÉèÖÃÍ¼Æ¬×ÊÔ´ 
+                imageView.setImageResource(imgs[position]);//ÎªImageViewï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½Ô´ 
                 return imageView; 
         } 
 } 
