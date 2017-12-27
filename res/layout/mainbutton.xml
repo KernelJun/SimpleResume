@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:keepScreenOn="true"
+    android:orientation="horizontal" 
+    android:color="@color/fontcolor">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+   <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/jhj_photo01" 
+            android:text="@string/my_choice"
+            android:textSize="24.5sp" 
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/fontcolor"/>-->
+   <ImageSwitcher 
+       android:id="@+id/imageswithcer"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:inAnimation="@anim/anim_in"
+       android:outAnimation="@anim/anim_out">
+       <ImageView 
+           android:id="@+id/imageview01"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/jhj_photo01"/>
+       <ImageView 
+           android:id="@+id/imageview02"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/jhj_photo02"/>
+   </ImageSwitcher>
+   <TextView 
+       android:id="@+id/imageswitcher_button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:text="@string/my_choice"
+       android:textSize="24.5sp"
+       android:textColor="@color/fontcolor">
+   </TextView>"
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:stretchColumns="*">
+        <TableRow >
+            <Button 
+                android:id="@+id/work_experience"
+                android:text="@string/work_experience"
+                android:textColor="@color/fontcolor" 
+                android:background="@drawable/button"/>
+            <Button
+                android:id="@+id/study_experience"
+                android:text="@string/educate_background" 
+                android:textColor="@color/fontcolor"
+                android:background="@drawable/button"/> "
+        </TableRow>
+        <TableRow >
+            <Button
+                android:id="@+id/my_photoshow"
+                android:text="@string/my_photoshow"
+                android:textColor="@color/fontcolor"
+                android:background="@drawable/button" >
+            </Button>
+            <Button
+                android:id="@+id/my_boke"
+                android:text="@string/my_boke"
+                android:textColor="@color/fontcolor"
+                android:background="@drawable/button"/>
+        </TableRow>
+        <TableRow >
+            <Button
+                android:id="@+id/my_expects"
+                android:text="@string/my_expect"
+                android:textColor="@color/fontcolor"
+                android:background="@drawable/button" />
+            <Button
+                android:id="@+id/my_introducts"
+                android:text="@string/my_introduct"
+                android:textColor="@color/fontcolor" 
+                android:background="@drawable/button" />
+        </TableRow>
+        <!--<TableRow >
+            <Button
+                android:id="@+id/my_youdao"
+                android:text="@string/my_youdao"
+                android:textColor="@color/fontcolor" >
+               </Button>
+            <Button
+                android:id="@+id/my_boke"
+                android:text="@string/my_boke"
+                android:textColor="@color/fontcolor" />
+        </TableRow>-->
+     </TableLayout>
+         <Button
+            android:id="@+id/telephone"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:drawableBottom="@drawable/ic_telephone" 
+            android:text="@string/my_telephone"
+            android:textSize="14dp"
+            android:textColor="@color/tele_fontcolor"
+            android:gravity="center"
+            android:background="@drawable/telephone">
+        </Button>
+     
+        <!--<TextView
+            android:id="@+id/telephone"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:drawableBottom="@drawable/ic_telephone" 
+            android:drawablePadding="-3dp"
+            android:text="@string/my_telephone"
+            android:textColor="@color/tele_fontcolor"
+            android:gravity="center"
+            android:background="@drawable/textview">
+        </TextView>-->
+     </LinearLayout>
+</LinearLayout>

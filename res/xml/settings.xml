@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="pres_setting">
+    <CheckBoxPreference
+        android:key="music"
+        android:title="@string/music_title"
+        android:summary="@string/music_summary"
+        android:defaultValue="true"/>
+    <CheckBoxPreference
+        android:key="bootlauncher"
+        android:title="@string/bootLauncher"
+        android:defaultValue="false"/>
+    <Preference
+        android:key="Myyoudao"
+        android:title="@string/my_youdao"
+        android:summary="@string/youdao_summary">
+        <!--<intent
+        android:targetPackage="com.youdao.note"
+		android:targetClass="com.youdao.note.activity2.HomeActivity" />-->
+     </Preference>
+</PreferenceScreen>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">我的简历</string>
+    <string name="dummy_button">Enter</string>
+    <string name="dummy_content">蒋辉军\n简历</string>
+    <string name="my_choice">简历</string>
+    <string name="work_experience">工作经验</string>
+    <string name="educate_background">学习经历</string>
+    <string name="my_expect">期望工作</string>
+    <string name="my_introduct">个人简述</string>
+    <string name="my_youdao">我的有道</string>
+    <string name="my_boke">我的博客</string>
+    <string name="string_label">设置</string>
+    <string name="settings_shortcut">s</string>
+    <string name="menu_test01">测试</string>
+    <string name="music_title">音乐</string>
+    <string name="music_summary">背景音乐</string>
+    <string name="youdao_summary">技术札记</string>
+    <string name="my_telephone">静候佳音</string>
+    <string name="my_themes">感谢语</string>
+    <string name="text_jhj">&#160;&#160;&#160;&#160;&#160;&#160;非常感谢您对蒋辉军简历的欣赏！\n\n&#160;&#160;&#160;&#160;&#160;&#160;如果您觉得中意，欢迎来电蒋辉军-13760317901.\n\n&#160;&#160;&#160;&#160;&#160;&#160;Thank you!\n</string>
+    <string name="hints01">开始输入</string>
+    <string name="study_text1">自学</string>
+    <string name="study_text2">工作</string>
+    <string name="study_text3">学校</string>
+    <string name="introduct_text1">基本情况</string>
+    <string name="introduct_text2">View</string>
+    <string name="introduct_text3">兴趣爱好</string>
+    <string name="null_youdao">&#160;&#160;&#160;&#160;&#160;&#160;此刻，非常感谢您对蒋辉军简历的浏览！\n\n&#160;&#160;&#160;&#160;&#160;&#160;若您希望了解更多蒋辉军的技术笔记，请先下载android版有道云笔记。\n\n&#160;&#160;&#160;&#160;&#160;&#160;如果此设计，给您带来了不便，敬请谅解！\n\n&#160;&#160;&#160;&#160;&#160;&#160;Thank you!\n</string>
+    <string name="my_youdaonull">温馨提醒</string>
+    <string name="bootLauncher">开机自动启动</string>
+    <string name="my_photoshow">我的作品</string>
+    <string name="button_exit">再按一次，便退出</string>
+    <string name="networktitle">网络状态</string>
+     <string name="network_message">当前网络不可用，请先连接网络。谢谢！</string>
+     <string name="ok">确认</string>
+     <string name="no">取消</string>
+         <string name="experience_title">经验概述</string>
+     <string name="project_tile">项目经验</string>
+     <string name="tools_title">工具经验</string>
+</resources>

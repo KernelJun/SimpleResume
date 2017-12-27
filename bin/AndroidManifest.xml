@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jhj.resume"
+    android:versionCode="1"
+    android:versionName="2.0" 
+    android:installLocation="auto">
+        <!-- INTERNET有访问网络的权限，有改变网络的权限，有接收网络状态的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+        <!-- Needed to check when the network connection changes -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 应用程序需要屏幕纵向放置。这是google play store的过滤机制，也就是说，如果某个设置只有横屏，那么在google play store上，就不能下载此应用 -->
+    <uses-feature android:name="android.hardware.screen.portrait"/>
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />  
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.jhj.resume.Resume"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme" 
+            android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Mainbutton"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/FullscreenTheme"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity 
+            android:name=".Pres">
+            <!--android:theme="@android:style/Theme.Dialog">-->
+        </activity>
+        <!--<service
+            android:name="com.jhj.resume.Music"/>-->
+        <activity
+            android:name=".Gratitude"
+            android:label="@string/my_themes"
+            android:theme="@style/Theme.Android123">
+        </activity>
+        <activity
+            android:name=".Tabhost"
+            android:label="@string/work_experience">
+        </activity>
+        <activity
+            android:name=".StudyExperience"
+            android:label="@string/educate_background">
+        </activity>
+        <activity
+            android:name=".MyIntroduction"
+            android:label="@string/my_introduct">
+        </activity>
+        <activity
+            android:name=".Expection"
+            android:label="@string/my_expect">
+        </activity>
+        <activity
+            android:name=".Nullyoudao"
+            android:label="@string/my_youdaonull"
+            android:theme="@style/Theme.Android123">
+        </activity>
+        <activity
+            android:name=".MyPhotoShowGridView"
+            android:label="@string/my_photoshow">
+        </activity>
+        <receiver 
+            android:name=".BootLauncher">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

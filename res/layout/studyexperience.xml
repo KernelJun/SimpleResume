@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="40.0dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+    <TextView
+        android:id="@+id/study_text1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="@string/study_text1"
+        android:textSize="20.0dip"
+        android:textColor="#000000"/>
+    <TextView 
+        android:id="@+id/study_text2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="@string/study_text2"
+        android:textSize="20.0dip"
+        android:textColor="#000000"/>
+    <TextView 
+        android:id="@+id/study_text3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="@string/study_text3"
+        android:textSize="20.0dip"
+        android:textColor="#000000"/>
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/cursor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:src="@drawable/strip" />
+       
+   <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#FFFFFF"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+</LinearLayout>
